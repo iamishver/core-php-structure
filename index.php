@@ -6,7 +6,10 @@ $p = 'home';
 if (isset($_SERVER['REDIRECT_URL']) && !empty($_SERVER['REDIRECT_URL'])) {
     $p = $_SERVER['REDIRECT_URL'];
     $p = explode('/', $p);
-    $p = $p[2];
+    $p = $p[1];
+   if(!empty($p[2]) && strlen($p[2]) > 2 ){
+		$p = $p[2];
+	}
 }
 ?>
 

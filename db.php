@@ -1,14 +1,9 @@
 <?php
 $servername = "localhost";
 $username = "root";
-$password = "";
-$dbname = "norlink";
-
-
+$password = "wazir@password123";
+$dbname = "norlinx";
 $conn = new mysqli($servername, $username, $password, $dbname);
-$baseURL="http://192.168.1.24/norlinx/";
-
-
 $partnerSliderText="Customer Sample:";
 $contactUs="Contact Us";
 $followUsOn="Follow us on";
