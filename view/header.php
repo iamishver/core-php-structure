@@ -47,35 +47,35 @@
                                     <ul class="dropdown-menu">
                                         <li class="icon-1"><a href="<?php echo $baseURL; ?>services">Overview</a>
                                         </li>
-                                        <li class="ser-icon-1"><a href="#">GSMintegrate</a>
+                                        <li class="ser-icon-1"><a href="<?php echo $baseURL; ?>gsm-integrate">GSMintegrate</a>
                                         </li>
-                                        <li class="ser-icon-2"><a href="#">DCIM University</a>
+                                        <li class="ser-icon-2"><a href="<?php echo $baseURL; ?>dcim-university">DCIM University</a>
                                         </li>
                                         <a class="get-start" href="<?php echo $baseURL; ?>contact-us">Contact Us</a>
                                     </ul>
                                 </li>
                                 <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Tools<span class="fa fa-chevron-down"></span></a>
                                     <ul class="dropdown-menu">
-                                        <li class="icon-1"><a href="#">Overview</a>
+                                        <li class="icon-1"><a href="<?php echo $baseURL; ?>tools">Overview</a>
                                         </li>
-                                        <li class="ser-icon-1"><a href="#">GSMformula</a>
+                                        <li class="ser-icon-1"><a href="<?php echo $baseURL; ?>gsm-formula">GSMformula</a>
                                         </li>
-                                        <li class="ser-icon-2"><a href="#">GSMdashboard</a>
+                                        <li class="ser-icon-2"><a href="<?php echo $baseURL; ?>gsm-dashboard">GSMdashboard</a>
                                         </li>
-                                        <li class="ser-icon-4"><a href="#">GSMmobile</a>
+                                        <li class="ser-icon-4"><a href="<?php echo $baseURL; ?>gsm-mobile">GSMmobile</a>
                                         </li>
                                         <a class="get-start" href="<?php echo $baseURL; ?>contact-us">Contact Us</a>
                                     </ul>
                                 </li>
                                 <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Company<span class="fa fa-chevron-down"></span></a>
                                     <ul class="dropdown-menu">
-                                        <li class="icon-1"><a href="#">Overview</a>
+                                        <li class="icon-1"><a href="<?php echo $baseURL; ?>about-us">Overview</a>
                                         </li>
-                                        <li class="co-icon-1 menu-item-1126"><a href="#">Leadership Team</a>
+                                        <li class="co-icon-1 menu-item-1126"><a href="<?php echo $baseURL; ?>leadership">Leadership Team</a>
                                         </li>
-                                        <li class="co-icon-2 menu-item-1127"><a href="#">FAQ</a>
+                                        <li class="co-icon-2 menu-item-1127"><a href="<?php echo $baseURL; ?>faq">FAQ</a>
                                         </li>
-                                        <li class="co-icon-4 menu-item-1129"><a href="#">DCOI &ndash; Federal Data Center Mandate</a>
+                                        <li class="co-icon-4 menu-item-1129"><a href="<?php echo $baseURL; ?>federal-data-center-mandate">DCOI &ndash; Federal Data Center Mandate</a>
                                         </li>
                                         <a class="get-start" href="<?php echo $baseURL; ?>contact-us">Contact Us</a>
                                     </ul>

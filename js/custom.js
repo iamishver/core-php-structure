@@ -31,3 +31,11 @@ $('.client-carousel').owlCarousel({
         $("div.bhoechie-tab>div.bhoechie-tab-content").removeClass("active");
         $("div.bhoechie-tab>div.bhoechie-tab-content").eq(index).addClass("active");
     });
+$(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+    if (scroll >= 200) {
+        $(".site-navi").addClass("fix-header");
+    } else {
+        $(".site-navi").removeClass("fix-header");
+    }
+});
