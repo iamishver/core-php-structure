@@ -178,7 +178,7 @@
                 var data = $('#login').serialize();
                 $.ajax({
                     type: "POST",
-                    url: baseurl + "loginCheck.php",
+                    url: baseurl + "manage.php?p=loginCheck",
                     data: {"username": $("#username").val(), "password": $("#password").val()},
                     success: function (response) {
                         if (response == 'success') {
@@ -231,7 +231,7 @@
         if (flag == 1) {
             $.ajax({
                 type: "POST",
-                url: baseurl + "partner.php",
+                url: baseurl + "manage.php?p=partner",
                 data: $("#partners-form").serialize(),
                 success: function (response) {
                     if (response == 'success') {

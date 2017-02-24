@@ -5,7 +5,7 @@ if($_SERVER['HTTP_HOST']=='192.168.1.24' || $_SERVER['HTTP_HOST']=='localhost')
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "norlink";
+$dbname = "norlinx";
 $baseURL="http://192.168.1.24/norlinx/";
 } else {
 $servername = "localhost";
