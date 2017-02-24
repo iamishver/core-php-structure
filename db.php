@@ -1,5 +1,5 @@
 <?php
-session_start();
+
 if($_SERVER['HTTP_HOST']=='192.168.1.24' || $_SERVER['HTTP_HOST']=='localhost')
 {
 $servername = "localhost";
