@@ -1,0 +1,33 @@
+$(document).ready(function(){
+$('.client-carousel').owlCarousel({
+    items:5,
+    loop:true,
+    margin:10,
+    autoplay:true,
+    autoplayTimeout:5000,
+    autoplayHoverPause:true,
+	responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:2,
+            nav:false
+        },
+		801:{
+            items:5,
+            nav:true,
+            loop:false
+        }
+    }
+});
+});
+  $(document).on('click',"div.bhoechie-tab-menu>div.list-group>a",function(e) {
+        e.preventDefault();
+        $(this).siblings('a.active').removeClass("active");
+        $(this).addClass("active");
+        var index = $(this).index();
+        $("div.bhoechie-tab>div.bhoechie-tab-content").removeClass("active");
+        $("div.bhoechie-tab>div.bhoechie-tab-content").eq(index).addClass("active");
+    });
