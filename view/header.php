@@ -105,33 +105,29 @@
     <?php if ($p == 'home') { ?>
         <header class="site-header" role="banner"> <a href="/support" class="support-button"> Support </a>
 
-            <div id="myCarousel" class="carousel slide">
-                <ol class="carousel-indicators">
-                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#myCarousel" data-slide-to="1" class=""></li>
-
-                </ol>            
-                <div class="carousel-inner">
+            <div id="myCarousel" class="carousel slide">      
                     <div class="item active">
-                        <div class="fill slide" style="background:url(/images/com.jpg)">
+                        <div class="fill slide" style="background:url(images/com.jpg)">
                             <div class="video-container">
-                                <iframe width="1280" height="640" src="https://www.youtube.com/embed/jLa0rpg5Og8?modestbranding=1;autoplay=1;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                                <iframe width="1280" height="640" src="https://www.youtube.com/embed/jLa0rpg5Og8?modestbranding=1;autoplay=0;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
                             </div>
                         </div>
                     </div>
+
+
                     <div class="item ">
-                        <div class="fill slide" style="background:url(<?= $baseURL ?>images/b1.jpg)">
+                        <div class="fill slide" style="background:url(images/b1.jpg)">
 
                             <div class="container">
                                 <div class="slider-content">
                                     <div class="left col-md-5">
 
-                                        <div class="logo-img"><img src="<?php echo $baseURL; ?>images/dcim-solution.png">
+                                        <div class="logo-img"><img src="<?= $baseURL ?>images/dcim-solution.png">
                                         </div>
                                         <p class="para-desc">GSM Software is a comprehensive, user-friendly and up-to-the-minute solution that equips you with the tools for Data Center capacity management, mitigating risks, augmenting efficiency with real time results. </p>
                                         <div class="slide-button">
-                                            <a class="first-btn" href="http://www.norlinx.com/products/gsm-a-dcim-solution/gsm-powerlite/">Get Started Now</a>
-                                            <a class="first-btn" href="http://www.norlinx.com/services/schedule-a-live-demo">Schedule Demo</a>
+                                            <a class="first-btn" href="<?= $baseURL ?>gsm-powerlite/">Get Started Now</a>
+                                            <a class="first-btn" href="<?= $baseURL ?>schedule-a-live-demo">Schedule Demo</a>
                                         </div>
                                     </div>
                                     <div class="right col-md-7">
@@ -142,6 +138,8 @@
                             </div>
                         </div>
                     </div>
+
+
                 </div>
             </div>
 

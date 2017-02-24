@@ -1,15 +1,18 @@
 <?php
 ob_start();
-session_start();
+//	session_start();	
 require_once("db.php");
 $p = 'home';
+
 if (isset($_SERVER['REDIRECT_URL']) && !empty($_SERVER['REDIRECT_URL'])) {
     $p = $_SERVER['REDIRECT_URL'];
     $p = explode('/', $p);
-    $p = $p[1];
-   if(!empty($p[2]) && strlen($p[2]) > 2 ){
-		$p = $p[2];
-	}
+    $first_p = $p[1];
+    if (!empty($p[2]) && strlen($p[2]) > 2) {
+        $p = $p[2];
+    } else {
+        $p = $first_p;
+    }
 }
 ?>
 
@@ -22,7 +25,7 @@ if (isset($_SERVER['REDIRECT_URL']) && !empty($_SERVER['REDIRECT_URL'])) {
 <![endif]-->
 <!--[if !(IE 7) & !(IE 8)]><!-->
 <html lang="en-US" class="no-js">
-<!--<![endif]-->
+    <!--<![endif]-->
 
     <head>
         <meta charset="UTF-8">
@@ -41,8 +44,8 @@ if (isset($_SERVER['REDIRECT_URL']) && !empty($_SERVER['REDIRECT_URL'])) {
     <body>
 
         <?php
-        if ($conn->connect_error || !file_exists("view/".$p.".php")) {
-            include("view/404.php"); 
+        if ($conn->connect_error || !file_exists("view/" . $p . ".php")) {
+            include("view/404.php");
         } else {
             ?>
             <div id="page" class="site">

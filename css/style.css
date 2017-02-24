@@ -126,6 +126,9 @@ a:focus {
 	padding-bottom: 10px;
 	padding-top: 5px;
 }
+.owl-carousel .owl-item img {
+	width:auto;
+}
 /* .page-template-gsmenterprise-tpl .inner-banner {
   background-position: 263px center !important;
 } */
@@ -2885,9 +2888,7 @@ html.js {
 	background-size: cover;
 	-o-background-size: cover;
 }
-.item:nth-child(1) .slide {
-  background: rgba(0, 0, 0, 0) url("../images/com.jpg") repeat scroll -3px 0px !important;
-}
+
 .slide {
 	height: 642px;
 	color: #fff;
@@ -5276,15 +5277,20 @@ select.contact-input {
 }
 
 .apply-btn {
-	background: #215bbe none repeat scroll 0 0;
-	border: medium none;
-	color: #ffffff;
-	font-size: 16px;
-	font-weight: bold;
-	padding: 13px 50px;
-	text-transform: uppercase;
-	margin-top: 10px;
-	border-radius: 4px;
+  background: #215bbe none repeat scroll 0 0;
+  border: medium none;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+  padding: 13px 10px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 130px;
+}
+#partners-form img {
+    margin: 0 7px 10px;
 }
 
 .apply-btn:hover {
@@ -9781,7 +9787,7 @@ p.gray-color {
 	font-size: 16px;
 }
 
-.item:nth-child(2) .fill.slide::before {
+.owl-item:nth-child(2) .fill.slide::before {
 	background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
 	content: "";
 	height: 100%;
@@ -9800,7 +9806,10 @@ p.gray-color {
 	color: #848484;
 	font-size: 14px;
 }
-
+.captcha-118 {
+    display: block;
+    width: 100%;
+}
 .filter-category-list input[type=checkbox] {
 	opacity: 0;
 	float: left;

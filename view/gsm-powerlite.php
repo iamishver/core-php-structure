@@ -61,7 +61,6 @@
                                 </ul>
                             </div>
                             <div class="col-sm-5 col-md-5">
-                                <!--<img class="img-responsive max-width-cc" src="/images/desktop-blank.png" />-->
                                 <img class="img-responsive sharp" src="<?php echo $baseURL; ?>images/powerlite1.jpg" />
                             </div>
                         </div>
@@ -84,7 +83,6 @@
                                 </ul>
                             </div>
                             <div class="col-sm-5 col-md-5">
-                                <!--<img src="/images/laptop-blank.png" />-->
                                 <img class="img-responsive sharp" src="<?php echo $baseURL; ?>images/powerlite2-gsm.png" />
                             </div>
                         </div>

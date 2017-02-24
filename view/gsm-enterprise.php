@@ -64,7 +64,6 @@
                             </div>
                             <div class="col-sm-5 col-md-5">
                                 <img class="img-responsive sharp" src="<?php echo $baseURL; ?>images/enterprise1.jpg" />
-                                <!--<img src="/images/essential-right-img.png" />-->
                             </div>
                         </div>
                     </div>
@@ -87,7 +86,6 @@
                             </div>
                             <div class="col-sm-5 col-md-5">
                                 <img class="img-responsive sharp" src="<?php echo $baseURL; ?>images/enterprise2.jpg" />
-                                <!--<img src="/images/computer-left-img.png" />-->
                             </div>
                         </div>
                     </div>

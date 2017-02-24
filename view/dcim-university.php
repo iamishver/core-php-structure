@@ -106,7 +106,6 @@
                             </div>
                             <div class="col-sm-5 col-md-5">
                                 <img class="img-responsive sharp" src="<?php echo $baseURL; ?>images/dcim3.jpg" />
-                                <!--<img src="/images/computer-left-other.png" />-->
                             </div>
 
                         </div>

@@ -64,7 +64,6 @@
                             </div>
                             <div class="col-sm-5 col-md-5">
                                 <img class="img-responsive sharp" src="<?php echo $baseURL; ?>images/profess1.jpg" />
-                                <!--<img class="img-responsive max-width-cc1" src="/images/profess1.png" />-->
                             </div>
                         </div>
                     </div>
@@ -89,7 +88,6 @@
                             </div>
                             <div class="col-sm-5 col-md-5">
                                 <img class="img-responsive sharp" src="<?php echo $baseURL; ?>images/profess2.jpg" />
-                                <!--<img src="http://www.norlinx.com/wp-content/themes/norlinx/images/profess2.png" />-->
                             </div>
                         </div>
                     </div>
@@ -112,7 +110,6 @@
                             </div>
                             <div class="col-sm-5 col-md-5">
                                 <img class="img-responsive sharp" src="<?php echo $baseURL; ?>images/profess3.jpg" />
-                                <!--<img class="img-responsive max-width-cc2" src="http://www.norlinx.com/wp-content/themes/norlinx/images/profess3.png" />-->
                             </div>
                         </div>
                     </div>

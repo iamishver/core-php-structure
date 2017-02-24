@@ -22,6 +22,9 @@ $('.client-carousel').owlCarousel({
         }
     }
 });
+$('#myCarousel').owlCarousel({
+    items:1
+});
 });
   $(document).on('click',"div.bhoechie-tab-menu>div.list-group>a",function(e) {
         e.preventDefault();
