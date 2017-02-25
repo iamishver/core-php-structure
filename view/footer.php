@@ -255,3 +255,17 @@
         }
     }
 </script>
+<script type="text/javascript"> 
+   $(document).ready(function() {
+   $(".marketing_material .iframe").fancybox({
+        'width': 1200, // or whatever you want
+        'height': 700, // or whatever you want
+        'type': 'iframe'
+   });
+
+    $(".btn-marketing").click(function() { 
+        $(".fancybox-wrap").addClass("magi");
+    });
+
+   });      
+</script>

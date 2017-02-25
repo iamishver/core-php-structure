@@ -1,6 +1,4 @@
 <?php
-include "db.php";
-date_default_timezone_set('UTC');
 if (isset($_POST)) {
 
     $username = $_POST['username'];
@@ -12,7 +10,6 @@ if (isset($_POST)) {
         if ($conn->query($sql) === TRUE) {
             $array = array("userId" => $conn->insert_id);
             $_SESSION['userData'] = $array;
-//            print_r($_SESSION);exit;
             echo 'success';
             exit;
         }

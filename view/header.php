@@ -84,8 +84,10 @@
                                     <ul class="dropdown-menu">
                                         <li id="menu-item-1345" class="menu-item-1345"><a href="javascript:void(0)" data-toggle="modal" data-target="#myModal" data-ps2id-api="true">Opportunity Registration</a>
                                         </li>
-                                        <li id="menu-item-1346" class="menu-item-1346"><a href="javascript:void(0)" data-toggle="modal" data-target="#myModallogin" data-ps2id-api="true">Partner Login</a>
+                                        <?php if(!isset($_SESSION['userData']) && !empty($_SESSION['userData'])){?>
+                                            <li id="menu-item-1346" class="menu-item-1346"><a href="javascript:void(0)" data-toggle="modal" data-target="#myModallogin" data-ps2id-api="true">Partner Login</a>
                                         </li>
+                                        <?php } ?>
                                         <a class="get-start" href="<?php echo $baseURL; ?>contact-us">Contact Us</a>
                                     </ul>
                                 </li>

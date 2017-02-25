@@ -2,6 +2,7 @@
 ob_start();
 session_start();
 require_once("db.php");
+date_default_timezone_set('UTC');
 $p = 'home';
 
 if (isset($_SERVER['REDIRECT_URL']) && !empty($_SERVER['REDIRECT_URL'])) {

@@ -3,6 +3,7 @@ ob_start();
 session_start();
 
 require_once("db.php");
+date_default_timezone_set('UTC');
 
 $BasicHURL=str_replace('manage.php','',$_SERVER['PHP_SELF']);
 $HURL="http://".$_SERVER['HTTP_HOST'].$BasicHURL;

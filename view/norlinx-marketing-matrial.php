@@ -313,14 +313,11 @@ if(empty($_SESSION['userData']) || !isset($_SESSION['userData'])){
 
                                 <div class="panel panel-default">
 
-
-
                                     <div class="col-sm-12">
                                         <div class="box_marketing">
                                             <div class="title">
                                                 <a class="link_material"><h2> NORLINX Asset Management Example</h2></a>
-                                                <a class="btn-marketing iframe hidden-xs" onClick="opens()" id="pdfs_1603" href="" data-ps2id-api="true">Download</a>
-                                                <a class="btn-marketing visible-xs" onClick="opens()" id="pdfs_1603" href="" data-ps2id-api="true">Download</a>
+                                                <a class="iframe videologinpage" id="pdfs_1603" href="https://www.youtube.com/embed/uRVMyL66fRk?&amp;theme=dark&amp;autohide=2" frameborder="0" "="">View</a>
                                             </div>
                                         </div>
                                     </div>
