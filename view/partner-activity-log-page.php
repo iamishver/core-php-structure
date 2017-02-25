@@ -19,7 +19,7 @@ $exe = $conn->query($query);
         <section class="product-sec"> 
             <div class="container">
                 <div class="title">
-                    <h1 class="heading">Protected: Partner Activity Log Page</h1>
+                    <h1 class="heading" style="width: 51%">Protected: Partner Activity Log Page</h1>
                 </div>
                 <?php if (isset($_SESSION['partnerData']) && !empty($_SESSION['partnerData']) && $_SESSION['partnerData'] == '1') { ?>
 
