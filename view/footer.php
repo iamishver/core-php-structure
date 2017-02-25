@@ -54,8 +54,6 @@
 
             <div class="signup-button">
                 <input class="submit_button first-btn" value="Login" name="submit" type="button">
-                <!--<input id="security" name="security" value="b73b99597c" type="hidden"><input name="_wp_http_referer" value="/" type="hidden">-->     
-                <!--<img class="ajax-loader" src="http://www.norlinx.com/wp-content/plugins/contact-form-7/images/ajax-loader.gif" alt="Sending ..." style="visibility: hidden;">-->
                 <div id="loading_loader_forget"></div>
             </div>
         </form>
@@ -107,12 +105,11 @@
             <span class="AdditionalComments"><textarea name="partnerComments" cols="40" rows="10" class="career-input" aria-invalid="false" placeholder="Comments">
                 </textarea></span>
             <input name="_wpcf7_captcha_challenge_captcha-118" value="220487847" type="hidden">
-            <img src="http://localhost/norlinx/captcha.php" border="0" alt="CAPTCHA!" id="captcha">
+            <img src="<?php echo $baseURL; ?>captcha.php" border="0" alt="CAPTCHA!" id="captcha">
             <span class="captcha-118">
                 <input name="captcha-118" value="" id="captcha-txt" size="4" maxlength="4" class="wpcf7-form-control wpcf7-captchar career-input" aria-invalid="false" placeholder="Enter above code here*" type="text">
             </span>
             <input value="Submit" class="apply-btn" id="subspartner" type="partner">
-            <img class="ajax-loader" src="http://www.norlinx.com/wp-content/plugins/contact-form-7/images/ajax-loader.gif" alt="Sending ..." style="visibility: hidden;"></p>
     </form>
 </div>
 <script type="text/javascript" src="<?php echo $baseURL; ?>js/jquery.min.js"></script>

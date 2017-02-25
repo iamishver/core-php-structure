@@ -25,7 +25,7 @@
                                 <h1>FAQ Categories</h1>
                                 <div class="faq-cata-content">
                                     <ul class="cata-list">
-                                        <li>
+                                        <li class="active">
                                             <a href="#norlinx_cat" data-toggle="tab">
                                                 <h3>NORLINX</li>
                                         <li>
@@ -45,7 +45,7 @@
                             </div>
                             <div class="faq-container">
                                 <div class="tab-content">
-                                    <div class="tab-pane" id="norlinx_cat">
+                                    <div class="tab-pane active" id="norlinx_cat">
                                         <div class="panel-group" id="accordion-0">
                                             <div class="panel panel-default">
                                                 <div class="panel-heading ">

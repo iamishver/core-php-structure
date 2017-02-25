@@ -5179,7 +5179,7 @@ select.contact-input {
   margin-bottom: 0;
   margin-right: 5px;
   padding: 10px;
-  width: 48%;
+  width: 47%;
 }
 .wpcf7-form-control-wrap.captcha-118 {
   width: 100%;
@@ -13067,7 +13067,7 @@ cursor:default;
 .captcha-118 {
   display: inline-block;
   float: left;
-  width: 40%;
+  width: 39%;
 }
 #partners-form img {
   float: left;
@@ -13076,4 +13076,7 @@ cursor:default;
 #menu-item-1347 {
  background: rgba(0, 0, 0, 0) url("../images/logout.png") no-repeat scroll 1px center !important;
  display: inline-block;
+}
+.cata-list > li:nth-of-type(5)::before {
+    display: none;
 }
