@@ -54,9 +54,11 @@ if($p!='' && $p=='logout'){
     <body>
 
         <?php
-        if ($conn->connect_error || !file_exists("view/" . $p . ".php")) {
-            include("view/404.php");
-        } else {
+        if ($conn->connect_error || !file_exists("view/" . $p . ".php")) {?>
+            <?php include("view/header.php"); ?>
+            <?php include("view/404.php");?>
+            <?php include("view/footer.php"); ?>
+        <?php } else {
             ?>
             <div id="page" class="site">
                 <?php include("view/header.php"); ?>
