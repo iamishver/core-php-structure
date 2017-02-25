@@ -52,7 +52,9 @@ if($p!='' && $p=='logout'){
         <link href="<?php echo $baseURL; ?>css/responsive.css" type="text/css" rel="stylesheet" />
     </head>
     <body>
-
+        <?php if($p=='partner-activity-log'){
+            $p = 'partner-activity-log-page';
+        }?>
         <?php
         if ($conn->connect_error || !file_exists("view/" . $p . ".php")) {?>
             <?php include("view/header.php"); ?>
