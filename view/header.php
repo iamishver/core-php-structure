@@ -8,7 +8,7 @@
                 </div>
                 <!-- .site-branding -->
 
-                <?php if($p!='partner-activity-log-page' || $p!='partner-activity-log'){?>
+                <?php if($p!='partner-activity-log-page' && $p!='partner-activity-log'){?>
                 <div id="site-header-menu" class="site-header-menu">
 
                     <nav class="navbar navbar-default">
