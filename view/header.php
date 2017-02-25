@@ -4,7 +4,7 @@
             <div class="site-header-main">
 
                 <div class="site-branding hidden-xs">
-                    <h1 class="site-title"><a href="home" rel="home"><img class="logo" alt="Norlinx" title="Norlinx" src="<?php echo $baseURL; ?>images/logo-1.png"></a></h1>
+                    <h1 class="site-title"><a href="<?php echo $baseURL; ?>" rel="home"><img class="logo" alt="Norlinx" title="Norlinx" src="<?php echo $baseURL; ?>images/logo-1.png"></a></h1>
                 </div>
                 <!-- .site-branding -->
 
@@ -108,7 +108,7 @@
         </div>
     </nav>
     <?php if ($p == 'home') { ?>
-        <header class="site-header" role="banner"> <a href="/support" class="support-button"> Support </a>
+        <header class="site-header" role="banner"> <a href="<?php echo $baseURL; ?>support" class="support-button"> Support </a>
 
             <div id="myCarousel" class="carousel slide">      
                     <div class="item active">
