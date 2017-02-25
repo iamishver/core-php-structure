@@ -1188,13 +1188,13 @@ body {
   display:block !important;
 }
 .banner-title {
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
+    /* left: 0; */
+    /* position: absolute; */
+    /* right: 0; */
+    /* top: 50%; */
+    /* transform: translateY(-50%); */
+  /* -moz-transform: translateY(-50%); */
+  /* -webkit-transform: translateY(-50%); */
 }
 .banner-title .heading {
   margin-top: 10px;
@@ -1619,6 +1619,9 @@ display:none;
 .footer-social-icon {
   margin-right: 5px;
 }
+.box_marketing {
+    margin: 0px 0 10px;
+}
 }
 
 
@@ -1725,6 +1728,12 @@ display:none;
 .enterprise-content {
   padding: 34px 15px;
 }
+.site-header-main {
+  position: absolute;
+}
+#myCarousel{
+  margin-top: 52px;
+} 
 }
 @media screen and (max-width: 736px) {
 .map {
@@ -2421,9 +2430,7 @@ div.bhoechie-tab-content {
 }
 /* Inner page Responsive End */
 
-/* #myCarousel{
-  margin-top: 52px;
-} */
+
 .center_new1 .inquiry-now.iframe{
   padding: 12px;
   font-size: 14px;
