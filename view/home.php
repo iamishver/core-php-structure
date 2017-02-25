@@ -84,7 +84,7 @@
                             </div>
                             <div class="client-logo-img"><img alt="volution" src="<?php echo $baseURL; ?>images/volution.png">
                             </div>
-                            <div class="client-logo-img"><img alt="partner-32" src="<?php echo $baseURL; ?>images/sm.png">
+                            <div class="client-logo-img"><img alt="partner-32" src="<?php echo $baseURL; ?>images/m.png">
                             </div>
                             <div class="client-logo-img"><img alt="partner-31" src="<?php echo $baseURL; ?>images/fairchild-logo.png">
                             </div>
