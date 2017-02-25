@@ -5,7 +5,7 @@ $('.client-carousel').owlCarousel({
     margin:10,
     autoplay:true,
     autoplayTimeout:1000,
-    autoplayHoverPause:true,
+    autoplayHoverPause:false,
 	responsive:{
         0:{
             items:1,
@@ -45,3 +45,5 @@ if ($(this).scrollTop()>= 100 ){
     $('.site-navi').removeClass("fix-header");
   }
 });	
+
+
