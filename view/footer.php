@@ -118,7 +118,15 @@
 <script type="text/javascript" src="<?php echo $baseURL; ?>js/fancySelect.js"></script>
 <script type="text/javascript" src="<?php echo $baseURL; ?>js/custom.js"></script>
 <script type="text/javascript" src="<?php echo $baseURL; ?>js/fancybox.js"></script>
+<?php if($p=='partner-activity-log-page' || $p=='partner-activity-log'){?>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.13/js/dataTables.bootstrap.min.js"></script>
+<?php } ?>
+
 <script type="text/javascript">
+$(document).ready(function() {
+    $('#example').DataTable();
+} );
     function opens() {
         $('html, body').animate({
             scrollTop: $('body').offset().top

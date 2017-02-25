@@ -13080,3 +13080,10 @@ cursor:default;
 .cata-list > li:nth-of-type(5)::before {
     display: none;
 }
+.marketing_material .cata-list > li:nth-of-type(5)::before {
+    display: block;
+}
+#fundedproject .first {
+    margin-left: 9px;
+    margin-right: 15px;
+}
