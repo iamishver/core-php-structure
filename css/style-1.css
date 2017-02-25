@@ -351,9 +351,9 @@ a:focus {
 }
 
 .partner-tab {
-    display: inline-block;
-    margin-top: 40px;
-    width: 100%;
+	display: inline-block;
+	width: 100%;
+	margin-top: 40px;
 }
 
 .heading {
@@ -6625,7 +6625,7 @@ span.wpcf7-not-valid-tip {
 
 .dummy-text {
 	display: inline-block;
-	padding: 3px 0 0px;
+	padding: 20px 0 40px;
 	width: 100%;
 }
 
@@ -12067,7 +12067,7 @@ video {
   width:50%;
 }
 .hello .career-input {
-	margin: 0 7px 10px;
+	margin: 0 5px 10px;
 }
 .infromation_p {
   color: rgb(0, 0, 0);
@@ -12588,6 +12588,10 @@ textarea.career-input {
 	background: rgba(0, 0, 0, 0) url("../images/co-icon-6.png") no-repeat scroll 1px center !important;
 	display: inline-block;
 }
+#menu-item-1347 {
+	background: rgba(0, 0, 0, 0) url("../images/logout.png") no-repeat scroll 1px center !important;
+	display: inline-block;
+}
 .cata-list > li:nth-child(6)::before {
   border: 0 none;
 }
@@ -13047,27 +13051,4 @@ cursor:default;
     border-radius: 10px;
     float: left;
     width: 30%;
-}
-
-
-/* New changes as on 25-2-2017 */
-.benefit-essential.nw_padding {
-    margin-top: 25px !important;
-}
-.wpcf7-form-control.wpcf7-captchar.career-input {
-  float: right;
-  width: 55%;
-}
-.captcha-118 {
-  display: inline-block;
-  float: left;
-  width: 40%;
-}
-#partners-form img {
-  float: left;
-  margin: 0 14px 10px;
-}
-#menu-item-1347 {
- background: rgba(0, 0, 0, 0) url("../images/logout.png") no-repeat scroll 1px center !important;
- display: inline-block;
 }

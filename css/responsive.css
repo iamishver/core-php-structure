@@ -910,15 +910,15 @@ div.bhoechie-tab-menu div.list-group > a.active::after, div.bhoechie-tab-menu di
   max-width: 74%;
 }
 /* New Changes For responsive as on 30-1-2017 end */  
-#myCarousel{
+/* #myCarousel{
   margin-top: 82px;
-}
+} */
 /* New Changes as on 3-2-2017 */
 
   /* New Changes as on 3-2-2017 */
-#myCarousel {
+/* #myCarousel {
   margin-top: 84px;
-}
+} */
 .video_block {
   height: 443px !important;
   max-width: 1140px !important;
@@ -992,9 +992,9 @@ div.bhoechie-tab-content {
   padding-right: 0;
   width: 100%;
 }
-#myCarousel{
+/* #myCarousel{
   margin-top: 67px;
-}
+} */
 
 /* New Changes as on 3-2-2017 */
 /* .main-navigation{
@@ -1304,9 +1304,9 @@ li.menu-item:hover .wr-megamenu-container ul.wr-mega-menu ul.sub-menu{
 .wr-megamenu-inner.open .submenu-items li a {
   color: #d0d0d0 !important;
 }
-#myCarousel {
+/* #myCarousel {
   margin-top: 72px;
-}
+} */
 .wr-megamenu-container ul.wr-mega-menu {
 display:none;
 }
@@ -1424,9 +1424,9 @@ display:none;
 .wr-mega-menu .wr-menu-down:hover{
   /* background: rgba(25, 70, 147, 0.8) url("../images/icon-down.svg") no-repeat scroll center 12px / 20px auto !important; */
 }
-#myCarousel {
+/* #myCarousel {
   margin-top: 72px;
-}
+} */
 
 /* Menu Chnages End */
 .it-responsive-mega {
@@ -1581,9 +1581,9 @@ display:none;
 
 /* New Chnages as on 3-2-2017 */
 
-#myCarousel {
+/* #myCarousel {
   margin-top: 65px;
-}
+} */
 .video_block {
   height: 322px !important;
 }
@@ -2253,9 +2253,9 @@ a.first-btn {
   padding: 10px 10px 7px;
   text-align: justify;
 }
-#myCarousel{
+/* #myCarousel{
   margin-top: 62px;
-}
+} */
 
 a.first-btn{
   display:inline-block;
@@ -2287,9 +2287,9 @@ a.first-btn{
 .logo {
   margin-top: 9px;
 }
-#myCarousel {
+/* #myCarousel {
   margin-top: 52px;
-}
+} */
 /* New Chnages as on 3-2-2017 End*/
 #fancybox-wrap {
   left: 0 !important;
@@ -2420,9 +2420,10 @@ div.bhoechie-tab-content {
   height: 173px;
 }
 /* Inner page Responsive End */
-#myCarousel{
+
+/* #myCarousel{
   margin-top: 52px;
-}
+} */
 .center_new1 .inquiry-now.iframe{
   padding: 12px;
   font-size: 14px;
