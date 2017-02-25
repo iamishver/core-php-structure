@@ -182,7 +182,7 @@
                     data: {"username": $("#username").val(), "password": $("#password").val()},
                     success: function (response) {
                         if (response == 'success') {
-                            location.href = baseurl + 'norlinx-marketing-matrial';
+                            location.href = baseurl + 'norlinx-marketing-material';
                         } else {
                             $(".status").html("Please enter correct password.");
                         }

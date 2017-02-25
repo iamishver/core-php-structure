@@ -17,6 +17,15 @@ if (isset($_SERVER['REDIRECT_URL']) && !empty($_SERVER['REDIRECT_URL'])) {
 }
 ?>
 
+<?php
+
+if($p!='' && $p=='logout'){
+    unset($_SESSION["userData"]);
+    session_destroy();
+    header("Location:home");
+}
+?>
+
 <!DOCTYPE html>
 <!--[if IE 7]>
 <html class="ie ie7" lang="en-US">
