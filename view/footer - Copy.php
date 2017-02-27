@@ -112,15 +112,16 @@
             <input value="Submit" class="apply-btn" id="subspartner" type="partner">
     </form>
 </div>
-<script type="text/javascript" src="<?php echo $baseURL; ?>js/jquery.min.js"></script>
-<script type="text/javascript" src="<?php echo $baseURL; ?>js/bootstrap.min.js"></script>
-<script type="text/javascript" src="<?php echo $baseURL; ?>js/owl.carousel.min.js"></script>
-<script type="text/javascript" src="<?php echo $baseURL; ?>js/fancySelect.js"></script>
-<script type="text/javascript" src="<?php echo $baseURL; ?>js/custom.js"></script>
-<script type="text/javascript" src="<?php echo $baseURL; ?>js/fancybox.js"></script>
+<script async type="text/javascript" src="<?php echo $baseURL; ?>js/jquery.min.js"></script>
+<script async type="text/javascript" src="<?php echo $baseURL; ?>js/bootstrap.min.js"></script>
+<script async type="text/javascript" src="<?php echo $baseURL; ?>js/owl.carousel.min.js"></script>
+<script async type="text/javascript" src="<?php echo $baseURL; ?>js/fancySelect.js"></script>
+<script async type="text/javascript" src="<?php echo $baseURL; ?>js/custom.js"></script>
+<script async type="text/javascript" src="<?php echo $baseURL; ?>js/fancybox.js"></script>
+
 <?php if ($p == 'partner-activity-log-page' || $p == 'partner-activity-log') { ?>
-    <script type="text/javascript" src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
-    <script type="text/javascript" src="https://cdn.datatables.net/1.10.13/js/dataTables.bootstrap.min.js"></script>
+    <script async type="text/javascript" src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
+    <script async type="text/javascript" src="https://cdn.datatables.net/1.10.13/js/dataTables.bootstrap.min.js"></script>
 
     <script type="text/javascript">
         $(document).ready(function () {
@@ -128,15 +129,6 @@
         });
     </script>
 <?php } ?>
-
-
-<script type="text/javascript">
-    function opens() {
-        $('html, body').animate({
-            scrollTop: $('body').offset().top
-        }, 100);
-    }
-</script>
 
 <script type="text/javascript">
     $('.testinprodu').attr("style", "");
@@ -146,6 +138,7 @@
     $('.popuppartners').attr("style", "");
     $(".navbar-toggle").click(function (event) {
         $(".navbar-collapse").toggle('in');
+
         $(".dropdown-toggle").click(function () {
             $(this).parent().siblings(".dropdown").removeClass("show");
             $(this).parent(".dropdown").toggleClass("show");
@@ -154,17 +147,7 @@
             $(".dropdown").removeClass("show");
         });
     });
-</script>
 
-<script>
-    $(document).ready(function () {
-        /* Apply fancybox to multiple items */
-        $("#npdfs.iframe").fancybox({
-            'width': 1200, // or whatever you want
-            'height': 500, // or whatever you want
-            'type': 'iframe'
-        });
-    });
 </script>
 
 <script type="text/javascript">
@@ -189,7 +172,7 @@
                         if (response == 'success') {
                             location.href = baseurl + 'norlinx-marketing-material';
                         } else {
-                            $(".status").html("Please enter correct password.");
+                            $(".status").html("User name or password is incorrect.");
                         }
                     }
                 });
@@ -232,6 +215,7 @@
         }
         if ($("#captcha-txt").val() == '') {
             $('#captcha-txt').css('border-color', "red");
+            flag = 0;
         }
         if (flag == 1) {
             $.ajax({
@@ -244,13 +228,21 @@
                     } else if (response == "not match") {
                         $('#captcha-txt').css('border-color', "red");
                     } else {
-                        $(".status").html("Please enter correct password.");
+                        $(".status").html("Incorrect password.");
                     }
                 }
             });
         }
         return false;
     })
+
+
+    function opens() {
+        $('html, body').animate({
+            scrollTop: $('body').offset().top
+        }, 100);
+    }
+
     function validNumber(value) {
         var numberRegex = /^[+-]?\d+(\.\d+)?([eE][+-]?\d+)?$/;
         if (numberRegex.test(value)) {
@@ -259,16 +251,19 @@
             return false;
         }
     }
+    function validateEmail(email) {
+        var filter = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+        if (filter.test(email)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
 </script>
 <script type="text/javascript">
-    $(document).ready(function () {
-        $(".marketing_material .iframe").fancybox({
-            'width': 1200, // or whatever you want
-            'height': 700, // or whatever you want
-            'type': 'iframe'
-        });
-        $(".btn-marketing").click(function () {
-            $(".fancybox-wrap").addClass("magi");
-        });
-    });
+    setTimeout(function () {
+        var url = 'https://www.youtube.com/embed/jLa0rpg5Og8?modestbranding=1;autoplay=1;rel=0&amp;showinfo=0';
+        $('#IshverVideo iframe').attr('src', url)
+    }, 2000); // 2000 = 2s, 10s= 10000
 </script>
