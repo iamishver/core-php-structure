@@ -130,14 +130,6 @@
 <?php } ?>
 
 <script type="text/javascript">
-    function opens() {
-        $('html, body').animate({
-            scrollTop: $('body').offset().top
-        }, 100);
-    }
-</script>
-
-<script type="text/javascript">
     $('.testinprodu').attr("style", "");
     $('.testingservices').attr("style", "");
     $('.testingtools').attr("style", "");
@@ -153,17 +145,7 @@
             $(".dropdown").removeClass("show");
         });
     });
-</script>
 
-<script>
-    $(document).ready(function () {
-        /* Apply fancybox to multiple items */
-        $("#npdfs.iframe").fancybox({
-            'width': 1200, // or whatever you want
-            'height': 500, // or whatever you want
-            'type': 'iframe'
-        });
-    });
 </script>
 
 <script type="text/javascript">
@@ -198,14 +180,7 @@
         }
         return false;
     });
-    function validateEmail(email) {
-        var filter = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
-        if (filter.test(email)) {
-            return true;
-        } else {
-            return false;
-        }
-    }
+   
     $('body').on('click', '#subspartner', function () {
         var email = $('#eids').val();
         var flag = 1;
@@ -242,7 +217,7 @@
                     if (response == 'success') {
                         location.href = baseurl + 'norlinx-marketing-matrial';
                     } else if (response == "not match") {
-                        $('#captcha-txt').css('border-color', "red");
+                         $('#captcha-txt').css('border-color', "red");
                     } else {
                         $(".status").html("Incorrect password.");
                     }
@@ -251,6 +226,14 @@
         }
         return false;
     })
+    
+
+    function opens() {
+        $('html, body').animate({
+            scrollTop: $('body').offset().top
+        }, 100);
+    }
+
     function validNumber(value) {
         var numberRegex = /^[+-]?\d+(\.\d+)?([eE][+-]?\d+)?$/;
         if (numberRegex.test(value)) {
@@ -259,17 +242,19 @@
             return false;
         }
     }
+    function validateEmail(email) {
+        var filter = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+        if (filter.test(email)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
 </script>
 <script type="text/javascript">
-    $(document).ready(function () {
-        $(".marketing_material .iframe").fancybox({
-            'width': 1200, // or whatever you want
-            'height': 700, // or whatever you want
-            'type': 'iframe'
-        });
-        $(".btn-marketing").click(function () {
-            $(".fancybox-wrap").addClass("magi");
-        });
-    });
-</script>
-
+    setTimeout(function () {
+  var url = 'https://www.youtube.com/embed/jLa0rpg5Og8?modestbranding=1;autoplay=1;rel=0&amp;showinfo=0';
+  $('#IshverVideo iframe').attr('src', url)
+}, 2000); // 2000 = 2s, 10s= 10000
+</script> 

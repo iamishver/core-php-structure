@@ -1,5 +1,6 @@
 $(document).ready(function () {
-    $('.client-carousel').owlCarousel({
+    setTimeout(function() {
+        $('.client-carousel').owlCarousel({
         items: 5,
         loop: true,
         margin: 10,
@@ -25,6 +26,9 @@ $(document).ready(function () {
     $('#myCarousel').owlCarousel({
         items: 1
     });
+    }, 2000); // 2000 = 2s, 10s= 10000
+
+    
 });
 $(document).on('click', "div.bhoechie-tab-menu>div.list-group>a", function (e) {
     e.preventDefault();

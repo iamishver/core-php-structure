@@ -180,14 +180,7 @@
         }
         return false;
     });
-    function validateEmail(email) {
-        var filter = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
-        if (filter.test(email)) {
-            return true;
-        } else {
-            return false;
-        }
-    }
+   
     $('body').on('click', '#subspartner', function () {
         var email = $('#eids').val();
         var flag = 1;
