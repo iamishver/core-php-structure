@@ -228,3 +228,9 @@ $(document).ready(function() {
     })
     
 </script>
+<script type="text/javascript">
+setTimeout(function() {
+  var url = 'https://www.youtube.com/embed/jLa0rpg5Og8?modestbranding=1;autoplay=1;rel=0&amp;showinfo=0';
+  $('#IshverVideo iframe').attr('src', url)
+}, 2000); // 2000 = 2s, 10s= 10000
+</script>

@@ -115,8 +115,9 @@
             <div id="myCarousel" class="carousel slide">      
                     <div class="item active">
                         <div class="fill slide" style="background:url(images/com.jpg)">
-                            <div class="video-container">
-                                <iframe width="1280" height="640" src="https://www.youtube.com/embed/jLa0rpg5Og8?modestbranding=1;autoplay=1;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+
+                            <div class="video-container" id="IshverVideo">
+                                <iframe width="1280" height="640" src="" frameborder="0" allowfullscreen></iframe>
                             </div>
                         </div>
                     </div>
