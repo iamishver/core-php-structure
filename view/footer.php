@@ -114,7 +114,7 @@
 </div>
 <script type="text/javascript" src="<?php echo $baseURL; ?>js/jquery.min.js"></script>
 <script async type="text/javascript" src="<?php echo $baseURL; ?>js/bootstrap.min.js"></script>
-<script async type="text/javascript" src="<?php echo $baseURL; ?>js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="<?php echo $baseURL; ?>js/owl.carousel.min.js"></script>
 <script async type="text/javascript" src="<?php echo $baseURL; ?>js/fancySelect.js"></script>
 <script type="text/javascript" src="<?php echo $baseURL; ?>js/custom.js"></script>
 <script async type="text/javascript" src="<?php echo $baseURL; ?>js/fancybox.js"></script>
@@ -129,36 +129,6 @@
     </script>
 <?php } ?>
 
-<script type="text/javascript">
-    $(document).ready(function () {
-    $('.client-carousel').owlCarousel({
-        items: 5,
-        loop: true,
-        margin: 10,
-        autoplay: true,
-        autoplayTimeout: 1000,
-        autoplayHoverPause: false,
-        responsive: {
-            0: {
-                items: 1,
-                nav: true
-            },
-            600: {
-                items: 3,
-                nav: false
-            },
-            1000: {
-                items: 5,
-                nav: true,
-                loop: false
-            }
-        }
-    });
-    $('#myCarousel').owlCarousel({
-        items: 1
-    });
-});
-</script>
 <script type="text/javascript">
     $('.testinprodu').attr("style", "");
     $('.testingservices').attr("style", "");
@@ -283,8 +253,41 @@
 
 </script>
 <script type="text/javascript">
+$ = jQuery.noConflict();
     setTimeout(function () {
   var url = 'https://www.youtube.com/embed/jLa0rpg5Og8?modestbranding=1;autoplay=1;rel=0&amp;showinfo=0';
   $('#IshverVideo iframe').attr('src', url)
 }, 2000); // 2000 = 2s, 10s= 10000
 </script> 
+
+<script type="text/javascript">
+    $ = jQuery.noConflict();
+    $(document).ready(function () {
+    $('.client-carousel').owlCarousel({
+        items: 5,
+        loop: true,
+        margin: 10,
+        autoplay: true,
+        autoplayTimeout: 1000,
+        autoplayHoverPause: false,
+        responsive: {
+            0: {
+                items: 1,
+                nav: true
+            },
+            600: {
+                items: 3,
+                nav: false
+            },
+            1000: {
+                items: 5,
+                nav: true,
+                loop: false
+            }
+        }
+    });
+    $('#myCarousel').owlCarousel({
+        items: 1
+    });
+});
+</script>
