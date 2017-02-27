@@ -115,39 +115,11 @@
             <div id="myCarousel" class="carousel slide">      
                     <div class="item active">
                         <div class="fill slide" style="background:url(images/com.jpg)">
-
                             <div class="video-container" id="IshverVideo">
                                 <iframe width="1280" height="640" src="" frameborder="0" allowfullscreen></iframe>
                             </div>
                         </div>
                     </div>
-
-
-                    <div class="item ">
-                        <div class="fill slide" style="background:url(images/b1.jpg)">
-
-                            <div class="container">
-                                <div class="slider-content">
-                                    <div class="left col-md-5">
-
-                                        <div class="logo-img"><img src="<?= $baseURL ?>images/dcim-solution.png">
-                                        </div>
-                                        <p class="para-desc">GSM Software is a comprehensive, user-friendly and up-to-the-minute solution that equips you with the tools for Data Center capacity management, mitigating risks, augmenting efficiency with real time results. </p>
-                                        <div class="slide-button">
-                                            <a class="first-btn" href="<?= $baseURL ?>gsm-powerlite/">Get Started Now</a>
-                                            <a class="first-btn" href="<?= $baseURL ?>schedule-a-live-demo">Schedule Demo</a>
-                                        </div>
-                                    </div>
-                                    <div class="right col-md-7">
-                                        <div class="person-img">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
                 </div>
             </div>
 
