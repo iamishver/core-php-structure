@@ -130,6 +130,36 @@
 <?php } ?>
 
 <script type="text/javascript">
+    $(document).ready(function () {
+    $('.client-carousel').owlCarousel({
+        items: 5,
+        loop: true,
+        margin: 10,
+        autoplay: true,
+        autoplayTimeout: 1000,
+        autoplayHoverPause: false,
+        responsive: {
+            0: {
+                items: 1,
+                nav: true
+            },
+            600: {
+                items: 3,
+                nav: false
+            },
+            1000: {
+                items: 5,
+                nav: true,
+                loop: false
+            }
+        }
+    });
+    $('#myCarousel').owlCarousel({
+        items: 1
+    });
+});
+</script>
+<script type="text/javascript">
     $('.testinprodu').attr("style", "");
     $('.testingservices').attr("style", "");
     $('.testingtools').attr("style", "");
