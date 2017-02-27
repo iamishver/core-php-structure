@@ -112,13 +112,12 @@
             <input value="Submit" class="apply-btn" id="subspartner" type="partner">
     </form>
 </div>
-<!--script type="text/javascript" src="<?php //echo $baseURL; ?>js/jquery.min.js"></script>
-<script async type="text/javascript" src="<?php //echo $baseURL; ?>js/bootstrap.min.js"></script>
-<script async type="text/javascript" src="<?php /$baseURL; ?>js/owl.carousel.min.js"></script>
-<script async type="text/javascript" src="<?php // $baseURL; ?>js/fancySelect.js"></script-->
+<script type="text/javascript" src="<?php echo $baseURL; ?>js/jquery.min.js"></script>
+<script async type="text/javascript" src="<?php echo $baseURL; ?>js/bootstrap.min.js"></script>
+<script async type="text/javascript" src="<?php echo $baseURL; ?>js/owl.carousel.min.js"></script>
+<script async type="text/javascript" src="<?php echo $baseURL; ?>js/fancySelect.js"></script>
 <script type="text/javascript" src="<?php echo $baseURL; ?>js/custom.js"></script>
-<!--script async type="text/javascript" src="<?php // $baseURL; ?>js/fancybox.js"></script-->
-
+<script async type="text/javascript" src="<?php echo $baseURL; ?>js/fancybox.js"></script>
 <?php if ($p == 'partner-activity-log-page' || $p == 'partner-activity-log') { ?>
     <script async type="text/javascript" src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
     <script async type="text/javascript" src="https://cdn.datatables.net/1.10.13/js/dataTables.bootstrap.min.js"></script>
