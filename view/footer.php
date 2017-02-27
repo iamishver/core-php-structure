@@ -130,14 +130,6 @@ $(document).ready(function() {
 <?php } ?>
 
 <script type="text/javascript">
-    function opens() {
-        $('html, body').animate({
-            scrollTop: $('body').offset().top
-        }, 100);
-    }
-</script>
-
-<script type="text/javascript">
     $('.testinprodu').attr("style", "");
     $('.testingservices').attr("style", "");
     $('.testingtools').attr("style", "");
@@ -155,19 +147,6 @@ $(document).ready(function() {
         });
     });
 
-</script>
-
-<script>
-    $(document).ready(function () {
-        /* Apply fancybox to multiple items */
-
-        $("#npdfs.iframe").fancybox({
-            'width': 1200, // or whatever you want
-            'height': 500, // or whatever you want
-            'type': 'iframe'
-        });
-
-    });
 </script>
 
 <script type="text/javascript">
@@ -202,14 +181,7 @@ $(document).ready(function() {
         }
         return false;
     });
-    function validateEmail(email) {
-        var filter = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
-        if (filter.test(email)) {
-            return true;
-        } else {
-            return false;
-        }
-    }
+    
     $('body').on('click', '#subspartner', function () {
         var email = $('#eids').val();
         var flag = 1;
@@ -254,26 +226,5 @@ $(document).ready(function() {
         }
         return false;
     })
-    function validNumber(value) {
-        var numberRegex = /^[+-]?\d+(\.\d+)?([eE][+-]?\d+)?$/;
-        if (numberRegex.test(value)) {
-            return true;
-        } else {
-            return false;
-        }
-    }
-</script>
-<script type="text/javascript"> 
-   $(document).ready(function() {
-   $(".marketing_material .iframe").fancybox({
-        'width': 1200, // or whatever you want
-        'height': 700, // or whatever you want
-        'type': 'iframe'
-   });
-
-    $(".btn-marketing").click(function() { 
-        $(".fancybox-wrap").addClass("magi");
-    });
-
-   });      
+    
 </script>
