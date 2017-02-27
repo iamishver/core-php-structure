@@ -121,12 +121,15 @@
 <?php if($p=='partner-activity-log-page' || $p=='partner-activity-log'){?>
     <script type="text/javascript" src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
     <script type="text/javascript" src="https://cdn.datatables.net/1.10.13/js/dataTables.bootstrap.min.js"></script>
-<?php } ?>
 
-<script type="text/javascript">
+    <script type="text/javascript">
 $(document).ready(function() {
     $('#example').DataTable();
 } );
+</script>
+<?php } ?>
+
+<script type="text/javascript">
     function opens() {
         $('html, body').animate({
             scrollTop: $('body').offset().top

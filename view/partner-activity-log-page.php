@@ -10,7 +10,7 @@
     </div> 
 </div>
 <?php
-$query = "select *  from users";
+$query = "select var_email,var_ip_address,dt_created_date from users";
 $exe = $conn->query($query);
 ?>
 
@@ -91,9 +91,7 @@ $exe = $conn->query($query);
 </div>
 
 <script type="text/javascript">
-    $(document).ready(function () {
-        $('#example').DataTable();
-    });
+    
     function partnerlog() {
         var password_val = $('#password_val').val();
         var norlinxpassword = $('#norlinxpassword').val();
