@@ -34,7 +34,7 @@ if($p!='' && $p=='logout'){
 <html class="ie ie8" lang="en-US">
 <![endif]-->
 <!--[if !(IE 7) & !(IE 8)]><!-->
-<html lang="en-US" class="no-js">
+<html lang="en-US">
     <!--<![endif]-->
 
     <head>
