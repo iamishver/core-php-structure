@@ -1,4 +1,5 @@
 <?php
+
 if($_SERVER['HTTP_HOST']=='192.168.1.24' || $_SERVER['HTTP_HOST']=='localhost')
 {
 $servername = "localhost";
@@ -6,7 +7,13 @@ $username = "root";
 $password = "";
 $dbname = "norlinx";
 $baseURL="http://192.168.1.24/norlinx/";
-}  else {
+} else if($_SERVER['HTTP_HOST']=='45.55.179.114'){
+$servername = "localhost";
+$username = "root";
+$password = "ishver@123";
+$dbname = "norlinx";
+$baseURL="http://45.55.179.114/norlinx/";
+} else {
 $servername = "localhost";
 $username = "root";
 $password = "wazir@password123";
