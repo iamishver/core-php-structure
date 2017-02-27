@@ -118,15 +118,15 @@
 <script async type="text/javascript" src="<?php echo $baseURL; ?>js/fancySelect.js"></script>
 <script async type="text/javascript" src="<?php echo $baseURL; ?>js/custom.js"></script>
 <script async type="text/javascript" src="<?php echo $baseURL; ?>js/fancybox.js"></script>
-<?php if($p=='partner-activity-log-page' || $p=='partner-activity-log'){?>
+<?php if ($p == 'partner-activity-log-page' || $p == 'partner-activity-log') { ?>
     <script async type="text/javascript" src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
     <script async type="text/javascript" src="https://cdn.datatables.net/1.10.13/js/dataTables.bootstrap.min.js"></script>
 
     <script type="text/javascript">
-$(document).ready(function() {
-    $('#example').DataTable();
-} );
-</script>
+        $(document).ready(function () {
+            $('#example').DataTable();
+        });
+    </script>
 <?php } ?>
 
 <script type="text/javascript">
@@ -181,7 +181,14 @@ $(document).ready(function() {
         }
         return false;
     });
-    
+    function validateEmail(email) {
+        var filter = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+        if (filter.test(email)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
     $('body').on('click', '#subspartner', function () {
         var email = $('#eids').val();
         var flag = 1;
@@ -207,6 +214,7 @@ $(document).ready(function() {
         }
         if ($("#captcha-txt").val() == '') {
             $('#captcha-txt').css('border-color', "red");
+            flag = 0;
         }
         if (flag == 1) {
             $.ajax({
@@ -216,8 +224,8 @@ $(document).ready(function() {
                 success: function (response) {
                     if (response == 'success') {
                         location.href = baseurl + 'norlinx-marketing-matrial';
-                    }else if(response == "not match"){
-                         $('#captcha-txt').css('border-color', "red");
+                    } else if (response == "not match") {
+                        $('#captcha-txt').css('border-color', "red");
                     } else {
                         $(".status").html("Incorrect password.");
                     }
@@ -226,11 +234,35 @@ $(document).ready(function() {
         }
         return false;
     })
-    
+
+
+    function opens() {
+        $('html, body').animate({
+            scrollTop: $('body').offset().top
+        }, 100);
+    }
+
+    function validNumber(value) {
+        var numberRegex = /^[+-]?\d+(\.\d+)?([eE][+-]?\d+)?$/;
+        if (numberRegex.test(value)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    function validateEmail(email) {
+        var filter = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+        if (filter.test(email)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
 </script>
 <script type="text/javascript">
-setTimeout(function() {
-  var url = 'https://www.youtube.com/embed/jLa0rpg5Og8?modestbranding=1;autoplay=1;rel=0&amp;showinfo=0';
-  $('#IshverVideo iframe').attr('src', url)
-}, 2000); // 2000 = 2s, 10s= 10000
+    setTimeout(function () {
+        var url = 'https://www.youtube.com/embed/jLa0rpg5Og8?modestbranding=1;autoplay=1;rel=0&amp;showinfo=0';
+        $('#IshverVideo iframe').attr('src', url)
+    }, 2000); // 2000 = 2s, 10s= 10000
 </script>
