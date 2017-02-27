@@ -112,11 +112,11 @@
             <input value="Submit" class="apply-btn" id="subspartner" type="partner">
     </form>
 </div>
-<!--script async type="text/javascript" src="<?php //echo $baseURL; ?>js/jquery.min.js"></script>
+<!--script type="text/javascript" src="<?php //echo $baseURL; ?>js/jquery.min.js"></script>
 <script async type="text/javascript" src="<?php //echo $baseURL; ?>js/bootstrap.min.js"></script>
 <script async type="text/javascript" src="<?php /$baseURL; ?>js/owl.carousel.min.js"></script>
 <script async type="text/javascript" src="<?php // $baseURL; ?>js/fancySelect.js"></script-->
-<script async type="text/javascript" src="<?php echo $baseURL; ?>js/custom.js"></script>
+<script type="text/javascript" src="<?php echo $baseURL; ?>js/custom.js"></script>
 <!--script async type="text/javascript" src="<?php // $baseURL; ?>js/fancybox.js"></script-->
 
 <?php if ($p == 'partner-activity-log-page' || $p == 'partner-activity-log') { ?>
