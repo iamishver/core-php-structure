@@ -286,8 +286,5 @@ $ = jQuery.noConflict();
             }
         }
     });
-    $('#myCarousel').owlCarousel({
-        items: 1
-    });
 });
 </script>
