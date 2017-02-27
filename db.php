@@ -35,6 +35,7 @@ $supportEmail="technical.support@norlinx.com";
 $fromEmail="info@norlinx.com";
 $successMsg="Your information has been stored. We get back to you in next 24 hours.";
 $norlinxpassword="goforJesus17771";
+$partnerpassword="welcome@norlinx";
 /*Contact Us Page*/
 
 ?>

@@ -12600,7 +12600,7 @@ textarea.career-input {
 }
 .cata-list > li:last-child {
   margin: 0;
-  padding-bottom: 0;
+  padding-bottom: 10px;
 }
 .cata-list > li:last-child:before{
 	border-bottom:0px;
@@ -12791,6 +12791,16 @@ textarea.career-input {
 .fancybox-inner{
 	width: 100% !important;
 } 
+.fancybox-type-iframe .fancybox-skin {
+	height:85vh !important;
+}
+.fancybox-outer {
+    height: 82vh !important;
+    overflow: hidden !important;
+}
+.fancybox-type-iframe .fancybox-inner {
+	height:82vh !important;
+}
 #fancybox-close {
 	z-index:99999 !important;
 }
@@ -13086,4 +13096,8 @@ cursor:default;
 #fundedproject .first {
     margin-left: 9px;
     margin-right: 15px;
+}
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+  background-color: transparent;
+  color: #215bbe;
 }

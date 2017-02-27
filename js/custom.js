@@ -11,11 +11,11 @@ $('.client-carousel').owlCarousel({
             items:1,
             nav:true
         },
-        600:{
-            items:2,
+		600:{
+            items:3,
             nav:false
         },
-		801:{
+		1000:{
             items:5,
             nav:true,
             loop:false
@@ -38,7 +38,7 @@ $('#myCarousel').owlCarousel({
 
 
 $(window).scroll(function() {
-if ($(this).scrollTop()>= 100 ){  
+if ($(this).scrollTop()>= 20 ){  
     $('.site-navi').addClass("fix-header");
   }
   else{
