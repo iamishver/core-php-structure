@@ -1732,7 +1732,8 @@ display:none;
   padding: 34px 15px;
 }
 .site-header-main {
-  position: absolute;
+  position: fixed;
+  top: 0;
 }
 #myCarousel{
   margin-top: 52px;
