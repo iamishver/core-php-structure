@@ -112,15 +112,15 @@
             <input value="Submit" class="apply-btn" id="subspartner" type="partner">
     </form>
 </div>
-<script type="text/javascript" src="<?php echo $baseURL; ?>js/jquery.min.js"></script>
-<script type="text/javascript" src="<?php echo $baseURL; ?>js/bootstrap.min.js"></script>
-<script type="text/javascript" src="<?php echo $baseURL; ?>js/owl.carousel.min.js"></script>
-<script type="text/javascript" src="<?php echo $baseURL; ?>js/fancySelect.js"></script>
-<script type="text/javascript" src="<?php echo $baseURL; ?>js/custom.js"></script>
-<script type="text/javascript" src="<?php echo $baseURL; ?>js/fancybox.js"></script>
+<script async type="text/javascript" src="<?php echo $baseURL; ?>js/jquery.min.js"></script>
+<script async type="text/javascript" src="<?php echo $baseURL; ?>js/bootstrap.min.js"></script>
+<script async type="text/javascript" src="<?php echo $baseURL; ?>js/owl.carousel.min.js"></script>
+<script async type="text/javascript" src="<?php echo $baseURL; ?>js/fancySelect.js"></script>
+<script async type="text/javascript" src="<?php echo $baseURL; ?>js/custom.js"></script>
+<script async type="text/javascript" src="<?php echo $baseURL; ?>js/fancybox.js"></script>
 <?php if ($p == 'partner-activity-log-page' || $p == 'partner-activity-log') { ?>
-    <script type="text/javascript" src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
-    <script type="text/javascript" src="https://cdn.datatables.net/1.10.13/js/dataTables.bootstrap.min.js"></script>
+    <script async type="text/javascript" src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
+    <script async type="text/javascript" src="https://cdn.datatables.net/1.10.13/js/dataTables.bootstrap.min.js"></script>
 
     <script type="text/javascript">
         $(document).ready(function () {
@@ -128,7 +128,6 @@
         });
     </script>
 <?php } ?>
-
 
 <script type="text/javascript">
     function opens() {
@@ -189,7 +188,7 @@
                         if (response == 'success') {
                             location.href = baseurl + 'norlinx-marketing-material';
                         } else {
-                            $(".status").html("Please enter correct password.");
+                            $(".status").html("User name or password is incorrect.");
                         }
                     }
                 });
@@ -232,6 +231,7 @@
         }
         if ($("#captcha-txt").val() == '') {
             $('#captcha-txt').css('border-color', "red");
+            flag = 0;
         }
         if (flag == 1) {
             $.ajax({
@@ -244,7 +244,7 @@
                     } else if (response == "not match") {
                         $('#captcha-txt').css('border-color', "red");
                     } else {
-                        $(".status").html("Please enter correct password.");
+                        $(".status").html("Incorrect password.");
                     }
                 }
             });
@@ -271,4 +271,10 @@
             $(".fancybox-wrap").addClass("magi");
         });
     });
+</script>
+<script type="text/javascript">
+    setTimeout(function () {
+        var url = 'https://www.youtube.com/embed/jLa0rpg5Og8?modestbranding=1;autoplay=1;rel=0&amp;showinfo=0';
+        $('#IshverVideo iframe').attr('src', url)
+    }, 2000); // 2000 = 2s, 10s= 10000
 </script>

@@ -118,7 +118,6 @@
 <script async type="text/javascript" src="<?php echo $baseURL; ?>js/fancySelect.js"></script>
 <script async type="text/javascript" src="<?php echo $baseURL; ?>js/custom.js"></script>
 <script async type="text/javascript" src="<?php echo $baseURL; ?>js/fancybox.js"></script>
-
 <?php if ($p == 'partner-activity-log-page' || $p == 'partner-activity-log') { ?>
     <script async type="text/javascript" src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
     <script async type="text/javascript" src="https://cdn.datatables.net/1.10.13/js/dataTables.bootstrap.min.js"></script>
@@ -138,7 +137,6 @@
     $('.popuppartners').attr("style", "");
     $(".navbar-toggle").click(function (event) {
         $(".navbar-collapse").toggle('in');
-
         $(".dropdown-toggle").click(function () {
             $(this).parent().siblings(".dropdown").removeClass("show");
             $(this).parent(".dropdown").toggleClass("show");
