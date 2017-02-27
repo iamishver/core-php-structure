@@ -2,7 +2,7 @@
 
 $servername = "localhost";
 $username = "root";
-$password = "ishver@123";
+$password = "ishvervc@123";
 $dbname = "norlinx";
 $baseURL="http://45.55.179.114/norlinx/";
 
