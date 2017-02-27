@@ -1,5 +1,4 @@
 <?php
-
 if($_SERVER['HTTP_HOST']=='192.168.1.24' || $_SERVER['HTTP_HOST']=='localhost')
 {
 $servername = "localhost";
@@ -7,6 +6,12 @@ $username = "root";
 $password = "";
 $dbname = "norlinx";
 $baseURL="http://192.168.1.24/norlinx/";
+} else if($_SERVER['HTTP_HOST']=='139.59.25.46')
+$servername = "localhost";
+$username = "root";
+$password = "ruchitviitorcloud@123";
+$dbname = "norlinx";
+$baseURL="http://norlinxhtml.wazirapp.com/";
 } else {
 $servername = "localhost";
 $username = "root";
