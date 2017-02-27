@@ -40,7 +40,7 @@
                             <div class="col-sm-3 col-md-3 new_tab">
                                 <div class="enter-right">
                                     <ul>
-                                        <li><a href="<?php echo $baseURL; ?>gsm-integrate/">GSMintegrate</a></li>
+                                        <li><a href="<?php echo $baseURL; ?>gsm-integrate">GSMintegrate</a></li>
                                         <li><a class="currunt-link">DCIM University</a></li>
                                     </ul> 
                                 </div>

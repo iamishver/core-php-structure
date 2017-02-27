@@ -287,4 +287,24 @@ $ = jQuery.noConflict();
         }
     });
 });
+
+    $(document).ready(function () {
+        / Apply fancybox to multiple items /
+
+        $("#npdfs.iframe").fancybox({
+            'width': 1200, // or whatever you want
+            'height': 500, // or whatever you want
+            'type': 'iframe'
+        });
+
+    });
+
+     $(document).ready(function() {
+   $(".marketing_material .iframe").fancybox({
+        'width': 1200, // or whatever you want
+        'height': 700, // or whatever you want
+        'type': 'iframe'
+  
+   });
+   });      
 </script>

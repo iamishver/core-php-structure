@@ -10,7 +10,7 @@
                 <div class="breadcrumbs" typeof="BreadcrumbList" vocab="http://schema.org/">
                     <div class="container"> 
 
-                        <span property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" title="Go to Norlinx." href="<?php echo $baseURL; ?>" class="home"><span property="name">Norlinx</span></a><meta property="position" content="1"></span> &gt; <span property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" title="Go to Tools." href="<?php echo $baseURL; ?>tools/" class="post post-page"><span property="name">Tools</span></a><meta property="position" content="2"></span>  &gt; <span property="itemListElement" typeof="ListItem"><span property="name">GSMdashboard</span><meta property="position" content="4"></span>
+                        <span property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" title="Go to Norlinx." href="<?php echo $baseURL; ?>" class="home"><span property="name">Norlinx</span></a><meta property="position" content="1"></span> &gt; <span property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" title="Go to Tools." href="<?php echo $baseURL; ?>tools" class="post post-page"><span property="name">Tools</span></a><meta property="position" content="2"></span>  &gt; <span property="itemListElement" typeof="ListItem"><span property="name">GSMdashboard</span><meta property="position" content="4"></span>
                     </div>
                 </div>
             </div>
@@ -34,9 +34,9 @@
                             <div class="col-sm-4 col-md-3 new_tab">
                                 <div class="enter-right">
                                     <ul>
-                                        <li><a href="<?php echo $baseURL; ?>gsm-formula/">GSMformula</a></li>
+                                        <li><a href="<?php echo $baseURL; ?>gsm-formula">GSMformula</a></li>
                                         <li><a class="currunt-link">GSMdashboard</a></li>
-                                        <li><a href="<?php echo $baseURL; ?>gsm-mobile/">GSMmobile</a></li>
+                                        <li><a href="<?php echo $baseURL; ?>gsm-mobile">GSMmobile</a></li>
                                     </ul>
                                 </div>
                             </div>

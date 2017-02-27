@@ -10,7 +10,7 @@
                 <div class="breadcrumbs" typeof="BreadcrumbList" vocab="http://schema.org/">
                     <div class="container"> 
 
-                        <span property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" title="Go to Norlinx." href="<?php echo $baseURL; ?>" class="home"><span property="name">Norlinx</span></a><meta property="position" content="1"></span> &gt; <span property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" title="Go to Tools." href="<?php echo $baseURL; ?>tools/" class="post post-page"><span property="name">Tools</span></a><meta property="position" content="2"></span>  &gt; <span property="itemListElement" typeof="ListItem"><span property="name">GSMformula</span><meta property="position" content="4"></span>
+                        <span property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" title="Go to Norlinx." href="<?php echo $baseURL; ?>" class="home"><span property="name">Norlinx</span></a><meta property="position" content="1"></span> &gt; <span property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" title="Go to Tools." href="<?php echo $baseURL; ?>tools" class="post post-page"><span property="name">Tools</span></a><meta property="position" content="2"></span>  &gt; <span property="itemListElement" typeof="ListItem"><span property="name">GSMformula</span><meta property="position" content="4"></span>
 
 
                     </div>
@@ -38,8 +38,8 @@
                                 <div class="enter-right">
                                     <ul>
                                         <li><a class="currunt-link">GSMformula</a></li>
-                                        <li><a href="<?php echo $baseURL; ?>gsm-dashboard/">GSMdashboard</a></li>
-                                        <li><a href="<?php echo $baseURL; ?>gsm-mobile/">GSMmobile</a></li>
+                                        <li><a href="<?php echo $baseURL; ?>gsm-dashboard">GSMdashboard</a></li>
+                                        <li><a href="<?php echo $baseURL; ?>gsm-mobile">GSMmobile</a></li>
                                     </ul>
                                 </div>
                             </div>

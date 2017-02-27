@@ -36,8 +36,8 @@
                                     <ul> 
                                         <li><a href="<?php echo $baseURL; ?>gsm-powerlite">GSMpowerlite</a></li>     
                                         <li><a class="currunt-link">GSMessential</a></li>
-                                        <li><a href="<?php echo $baseURL; ?>gsm-professional/">GSMprofessional</a></li>
-                                        <li><a href="<?php echo $baseURL; ?>gsm-enterprise/">GSMenterprise</a></li>
+                                        <li><a href="<?php echo $baseURL; ?>gsm-professional">GSMprofessional</a></li>
+                                        <li><a href="<?php echo $baseURL; ?>gsm-enterprise">GSMenterprise</a></li>
                                         <li><a class="iframe hidden-xs custom-click" id="npdfs" href="<?php echo $baseURL; ?>pdf/GSM_All_Product_Comparision.pdf" data-ps2id-api="true">All Product Comparison</a>
                                             <a class="visible-xs" id="npdfs" href="<?php echo $baseURL; ?>pdf/GSM_All_Product_Comparision.pdf" data-ps2id-api="true">All Product Comparison</a>
                                         </li>

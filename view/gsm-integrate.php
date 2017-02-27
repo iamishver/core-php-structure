@@ -36,7 +36,7 @@
                                 <div class="enter-right">
                                     <ul> 
                                         <li><a class="currunt-link">GSMintegrate</a></li>
-                                        <li><a href="<?php echo $baseURL; ?>dcim-university/">DCIM University</a></li>
+                                        <li><a href="<?php echo $baseURL; ?>dcim-university">DCIM University</a></li>
                                     </ul>
                                 </div>
                             </div>
