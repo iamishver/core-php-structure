@@ -192,7 +192,7 @@ $(document).ready(function() {
                         if (response == 'success') {
                             location.href = baseurl + 'norlinx-marketing-material';
                         } else {
-                            $(".status").html("Please enter correct password.");
+                            $(".status").html("User name or password is incorrect.");
                         }
                     }
                 });
@@ -247,7 +247,7 @@ $(document).ready(function() {
                     }else if(response == "not match"){
                          $('#captcha-txt').css('border-color', "red");
                     } else {
-                        $(".status").html("Please enter correct password.");
+                        $(".status").html("Incorrect password.");
                     }
                 }
             });
