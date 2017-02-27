@@ -112,12 +112,12 @@
             <input value="Submit" class="apply-btn" id="subspartner" type="partner">
     </form>
 </div>
-<script async type="text/javascript" src="<?php echo $baseURL; ?>js/jquery.min.js"></script>
-<script async type="text/javascript" src="<?php echo $baseURL; ?>js/bootstrap.min.js"></script>
-<script async type="text/javascript" src="<?php echo $baseURL; ?>js/owl.carousel.min.js"></script>
-<script async type="text/javascript" src="<?php echo $baseURL; ?>js/fancySelect.js"></script>
+<!--script async type="text/javascript" src="<?php //echo $baseURL; ?>js/jquery.min.js"></script>
+<script async type="text/javascript" src="<?php //echo $baseURL; ?>js/bootstrap.min.js"></script>
+<script async type="text/javascript" src="<?php /$baseURL; ?>js/owl.carousel.min.js"></script>
+<script async type="text/javascript" src="<?php // $baseURL; ?>js/fancySelect.js"></script-->
 <script async type="text/javascript" src="<?php echo $baseURL; ?>js/custom.js"></script>
-<script async type="text/javascript" src="<?php echo $baseURL; ?>js/fancybox.js"></script>
+<!--script async type="text/javascript" src="<?php // $baseURL; ?>js/fancybox.js"></script-->
 
 <?php if ($p == 'partner-activity-log-page' || $p == 'partner-activity-log') { ?>
     <script async type="text/javascript" src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
@@ -147,43 +147,6 @@
         });
     });
 
-</script>
-
-<script type="text/javascript">
-    $(document).ready(function () {
-    setTimeout(function () {
-        $('.client-carousel').owlCarousel({
-            items: 5,
-            loop: true,
-            margin: 10,
-            autoplay: true,
-            autoplayTimeout: 1000,
-            autoplayHoverPause: false,
-            responsive: {
-                0: {
-                    items: 1,
-                    nav: true
-                },
-                600: {
-                    items: 3,
-                    nav: false
-                },
-                1000: {
-                    items: 5,
-                    nav: true,
-                    loop: false
-                }
-            }
-        });
-    }, 3000); // 2000 = 2s, 10s= 10000
-    setTimeout(function () {
-        $('#myCarousel').owlCarousel({
-            items: 1
-        });
-    }, 3000); // 2000 = 2s, 10s= 10000
-
-
-});
 </script>
 
 <script type="text/javascript">
