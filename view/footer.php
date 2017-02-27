@@ -122,5 +122,169 @@
     <script type="text/javascript" src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
     <script type="text/javascript" src="https://cdn.datatables.net/1.10.13/js/dataTables.bootstrap.min.js"></script>
 
-  
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#example').DataTable();
+        });
+    </script>
 <?php } ?>
+
+<script type="text/javascript">
+    $('.testinprodu').attr("style", "");
+    $('.testingservices').attr("style", "");
+    $('.testingtools').attr("style", "");
+    $('.testingcomps').attr("style", "");
+    $('.popuppartners').attr("style", "");
+    $(".navbar-toggle").click(function (event) {
+        $(".navbar-collapse").toggle('in');
+        $(".dropdown-toggle").click(function () {
+            $(this).parent().siblings(".dropdown").removeClass("show");
+            $(this).parent(".dropdown").toggleClass("show");
+        });
+        $(".dropdown-menu a").click(function () {
+            $(".dropdown").removeClass("show");
+        });
+    });
+
+</script>
+
+<script type="text/javascript">
+    var baseurl = "<?= $baseURL; ?>";
+//    $ = ;
+    $('.submit_button').on('click', function () {
+        var sEmail = $("#username").val();
+        var password = $('#password').val();
+        $(".status").html("");
+        if ($.trim(sEmail).length == 0) {
+            $(".status").html("Please enter valid email address.");
+        }
+        if (validateEmail(sEmail)) {
+            if (password != "") {
+                $(".status").html("");
+                var data = $('#login').serialize();
+                $.ajax({
+                    type: "POST",
+                    url: baseurl + "manage.php?p=loginCheck",
+                    data: {"username": $("#username").val(), "password": $("#password").val()},
+                    success: function (response) {
+                        if (response == 'success') {
+                            location.href = baseurl + 'norlinx-marketing-material';
+                        } else {
+                            $(".status").html("User name or password is incorrect.");
+                        }
+                    }
+                });
+            }
+        } else {
+            $(".status").html("Please enter valid email address.");
+        }
+        return false;
+    });
+   
+    $('body').on('click', '#subspartner', function () {
+        var email = $('#eids').val();
+        var flag = 1;
+        if ($('#eids').val() != "" && validateEmail($('#eids').val()) === false) {
+            $('#eids').css('border-color', "red");
+            flag = 0;
+        }
+        if ($("#pemail").val() != "" && validateEmail($('#pemail').val()) === false) {
+            $('#pemail').css('border-color', "red");
+            flag = 0;
+        }
+        if ($("#phone").val() != "" && validNumber($('#phone').val()) === false) {
+            $('#phone').css('border-color', "red");
+            flag = 0;
+        }
+        if ($("#pphone").val() != "" && validNumber($('#pphone').val()) === false) {
+            $('#pphone').css('border-color', "red");
+            flag = 0;
+        }
+        if ($("#pcode").val() != "" && validNumber($('#pcode').val()) === false) {
+            $('#pcode').css('border-color', "red");
+            flag = 0;
+        }
+        if ($("#captcha-txt").val() == '') {
+            $('#captcha-txt').css('border-color', "red");
+            flag = 0;
+        }
+        if (flag == 1) {
+            $.ajax({
+                type: "POST",
+                url: baseurl + "manage.php?p=partner",
+                data: $("#partners-form").serialize(),
+                success: function (response) {
+                    if (response == 'success') {
+                        location.href = baseurl + 'norlinx-marketing-matrial';
+                    } else if (response == "not match") {
+                         $('#captcha-txt').css('border-color', "red");
+                    } else {
+                        $(".status").html("Incorrect password.");
+                    }
+                }
+            });
+        }
+        return false;
+    })
+    
+
+    function opens() {
+        $('html, body').animate({
+            scrollTop: $('body').offset().top
+        }, 100);
+    }
+
+    function validNumber(value) {
+        var numberRegex = /^[+-]?\d+(\.\d+)?([eE][+-]?\d+)?$/;
+        if (numberRegex.test(value)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    function validateEmail(email) {
+        var filter = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+        if (filter.test(email)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+</script>
+<script type="text/javascript">
+$ = jQuery.noConflict();
+    setTimeout(function () {
+  var url = 'https://www.youtube.com/embed/jLa0rpg5Og8?modestbranding=1;autoplay=1;rel=0&amp;showinfo=0';
+  $('#IshverVideo iframe').attr('src', url)
+}, 2000); // 2000 = 2s, 10s= 10000
+</script> 
+
+<script type="text/javascript">
+    $ = jQuery.noConflict();
+    $(document).ready(function () {
+    $('.client-carousel').owlCarousel({
+        items: 5,
+        loop: true,
+        margin: 10,
+        autoplay: true,
+        autoplayTimeout: 1000,
+        autoplayHoverPause: false,
+        responsive: {
+            0: {
+                items: 1,
+                nav: true
+            },
+            600: {
+                items: 3,
+                nav: false
+            },
+            1000: {
+                items: 5,
+                nav: true,
+                loop: false
+            }
+        }
+    });
+});
+</script>
