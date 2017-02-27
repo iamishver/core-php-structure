@@ -26,7 +26,7 @@ $(document).ready(function () {
     $('#myCarousel').owlCarousel({
         items: 1
     });
-    }, 2000); // 2000 = 2s, 10s= 10000
+    }, 3000); // 2000 = 2s, 10s= 10000
 
     
 });
