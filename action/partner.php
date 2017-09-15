@@ -25,29 +25,29 @@ if (isset($_POST)) {
         $partnerEmail = $post['partnerEmail'];
         $partnerComments = $post['partnerComments'];
         $date = date('Y-m-d H:i:s');
-        $query = "INSERT INTO `nx_partner`(`var_company`, `var_city`, `var_address`, `var_state`, `var_post_code`, `var_code_name`, `var_email`, `var_phone`, `txt_comment`, `var_partner_name`, `var_partner_contact_name`, `var_partner_phone`, `var_partner_email`, `txt_partner_comment`, `var_funded_project`, `dt_created_date`, `dt_updated_date`) VALUES ("
-                . "'$comapnyName',"
-                . "'$City',"
-                . "'$Address',"
-                . "'$State',"
-                . "'$PostalCode',"
-                . "'$FullName',"
-                . "'$EmailAddress',"
-                . "'$phone',"
-                . "'$comments',"
-                . "'$PartnerName',"
-                . "'$PartnerContactName',"
-                . "'$partnerPhone',"
-                . "'$partnerEmail',"
-                . "'$partnerComments',"
-                . " '$partnerComments',"
-                . "'$date',"
-                . "'$date')";
-        if ($conn->query($query) === TRUE) {
+        $query = 'INSERT INTO `nx_partner`(`var_company`, `var_city`, `var_address`, `var_state`, `var_post_code`, `var_code_name`, `var_email`, `var_phone`, `txt_comment`, `var_partner_name`, `var_partner_contact_name`, `var_partner_phone`, `var_partner_email`, `txt_partner_comment`, `var_funded_project`, `dt_created_date`, `dt_updated_date`) VALUES ('
+                ."'$comapnyName',"
+                ."'$City',"
+                ."'$Address',"
+                ."'$State',"
+                ."'$PostalCode',"
+                ."'$FullName',"
+                ."'$EmailAddress',"
+                ."'$phone',"
+                ."'$comments',"
+                ."'$PartnerName',"
+                ."'$PartnerContactName',"
+                ."'$partnerPhone',"
+                ."'$partnerEmail',"
+                ."'$partnerComments',"
+                ." '$partnerComments',"
+                ."'$date',"
+                ."'$date')";
+        if ($conn->query($query) === true) {
             echo 'success';
             exit;
         } else {
-            echo "Error";
+            echo 'Error';
             exit;
         }
     } else {

@@ -8,7 +8,8 @@
                 </div>
                 <!-- .site-branding -->
 
-                <?php if ($p != 'partner-activity-log-page' && $p != 'partner-activity-log') { ?>
+                <?php if ($p != 'partner-activity-log-page' && $p != 'partner-activity-log') {
+    ?>
                     <div id="site-header-menu" class="site-header-menu">
 
                         <nav class="navbar navbar-default">
@@ -85,13 +86,17 @@
                                         <ul class="dropdown-menu">
                                             <li id="menu-item-1345" class="menu-item-1345"><a href="javascript:void(0)" data-toggle="modal" data-target="#myModal" data-ps2id-api="true">Opportunity Registration</a>
                                             </li>
-                                            <?php if (!isset($_SESSION['userData']) && empty($_SESSION['userData'])) { ?>
+                                            <?php if (!isset($_SESSION['userData']) && empty($_SESSION['userData'])) {
+        ?>
                                                 <li id="menu-item-1346" class="menu-item-1346"><a href="javascript:void(0)" data-toggle="modal" data-target="#myModallogin" data-ps2id-api="true">Partner Login</a>
                                                 </li>
-                                            <?php } elseif (isset($_SESSION['userData']) && !empty($_SESSION['userData'])) { ?>
+                                            <?php
+    } elseif (isset($_SESSION['userData']) && !empty($_SESSION['userData'])) {
+        ?>
                                                 <li id="menu-item-1347" class="menu-item-1347"><a href="<?php echo $baseURL; ?>logout">Logout</a></li><br>
                                                 </li>
-                                            <?php } ?>
+                                            <?php
+    } ?>
 
                                             <a class="get-start" href="<?php echo $baseURL; ?>contact-us">Contact Us</a>
                                         </ul>
@@ -103,13 +108,15 @@
                         </nav>
                         <!-- .main-navigation -->
                     </div>
-                <?php } ?>
+                <?php
+} ?>
                 <!-- .site-header-menu -->
             </div>
             <!-- .site-header-main -->
         </div>
     </nav>
-    <?php if ($p == 'home') { ?>
+    <?php if ($p == 'home') {
+        ?>
         <header class="site-header" role="banner"> <a href="<?php echo $baseURL; ?>support" class="support-button"> Support </a>
 
             <div id="myCarousel" class="carousel slide">      
@@ -123,7 +130,8 @@
             </div>
    
     </header>
-<?php } ?>
+<?php
+    } ?>
 
 </div>
 <!-- .site-header -->

@@ -29,7 +29,7 @@
 
                                 <div class="alert alert-success fade in alert-dismissable" id="IshverMsg" style="display: none;">
                                     <a href="#" class="close" data-dismiss="alert" aria-label="close" title="close" style="width: 1%">×</a>
-                                    <strong>Success!</strong> <?php echo $successMsg;?>
+                                    <strong>Success!</strong> <?php echo $successMsg; ?>
                                 </div>
 
                                 <div class="col-md-6 contact-left">
