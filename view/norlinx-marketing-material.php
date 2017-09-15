@@ -1,8 +1,8 @@
 <?php
 
 include '/../db.php';
-if(empty($_SESSION['userData']) || !isset($_SESSION['userData'])){
-    header("Location:home");
+if (empty($_SESSION['userData']) || !isset($_SESSION['userData'])) {
+    header('Location:home');
 }
 ?>
 <div id="page" class="site">

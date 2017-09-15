@@ -118,7 +118,8 @@
 <script type="text/javascript" src="<?php echo $baseURL; ?>js/fancySelect.js"></script>
 <script type="text/javascript" src="<?php echo $baseURL; ?>js/fancybox.js"></script>
 <script type="text/javascript" src="<?php echo $baseURL; ?>js/custom.js"></script>
-<?php if ($p == 'partner-activity-log-page' || $p == 'partner-activity-log') { ?>
+<?php if ($p == 'partner-activity-log-page' || $p == 'partner-activity-log') {
+    ?>
     <script type="text/javascript" src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
     <script type="text/javascript" src="https://cdn.datatables.net/1.10.13/js/dataTables.bootstrap.min.js"></script>
 
@@ -127,7 +128,8 @@
             $('#example').DataTable();
         });
     </script>
-<?php } ?>
+<?php
+} ?>
 
 <script type="text/javascript">
     $('.testinprodu').attr("style", "");

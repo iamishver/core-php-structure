@@ -1,4 +1,5 @@
 <?php
+
 if (isset($_POST)) {
     $success_msg = 'error';
     if ($_POST['password'] == $norlinxpassword) {

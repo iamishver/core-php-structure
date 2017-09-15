@@ -10,7 +10,7 @@
     </div> 
 </div>
 <?php
-$query = "select var_email,var_ip_address,dt_created_date from users";
+$query = 'select var_email,var_ip_address,dt_created_date from users';
 $exe = $conn->query($query);
 ?>
 
@@ -21,7 +21,8 @@ $exe = $conn->query($query);
                 <div class="title">
                     <h1 class="heading" style="width: 51%">Protected: Partner Activity Log Page</h1>
                 </div>
-                <?php if (isset($_SESSION['partnerData']) && !empty($_SESSION['partnerData']) && $_SESSION['partnerData'] == '1') { ?>
+                <?php if (isset($_SESSION['partnerData']) && !empty($_SESSION['partnerData']) && $_SESSION['partnerData'] == '1') {
+    ?>
 
 
 
@@ -54,23 +55,24 @@ $exe = $conn->query($query);
                                     ?>
                                     <tr>
                                         <td><?php echo $n; ?></td>
-                                        <td><?php echo $row["var_email"]; ?></td>
-                                        <td><?php echo $row["var_ip_address"]; ?></td>
-                                        <td><?php echo $row["dt_created_date"]; ?></td>
+                                        <td><?php echo $row['var_email']; ?></td>
+                                        <td><?php echo $row['var_ip_address']; ?></td>
+                                        <td><?php echo $row['dt_created_date']; ?></td>
                                         <td>logged in</td>
                                     </tr>
                                     <?php
                                     $n++;
                                 }
                             } else {
-                                echo "0 results";
-                            }
-                            ?>
+                                echo '0 results';
+                            } ?>
 
 
                         </tbody>
                     </table>
-                <?php } else { ?>
+                <?php
+} else {
+                                ?>
                     <div class="product-desc-detail">
                         <p>This content is password protected. To view it please enter your password below:</p>
                         <div class="clearfix"></div>
@@ -84,7 +86,8 @@ $exe = $conn->query($query);
                         </form>
 
                     </div>
-                <?php } ?>
+                <?php
+                            } ?>
             </div> 
         </section>
     </div>

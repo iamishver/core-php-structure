@@ -1,7 +1,7 @@
 <?php
 ob_start();
 session_start();
-require_once("db.php");
+require_once 'db.php';
 date_default_timezone_set('UTC');
 $p = 'home';
 
@@ -19,10 +19,10 @@ if (isset($_SERVER['REDIRECT_URL']) && !empty($_SERVER['REDIRECT_URL'])) {
 
 <?php
 
-if($p!='' && $p=='logout'){
-    unset($_SESSION["userData"]);
+if ($p != '' && $p == 'logout') {
+    unset($_SESSION['userData']);
     session_destroy();
-    header("Location:home");
+    header('Location:home');
 }
 ?>
 
@@ -52,22 +52,25 @@ if($p!='' && $p=='logout'){
         <link href="<?php echo $baseURL; ?>css/responsive.css" type="text/css" rel="stylesheet" />
     </head>
     <body>
-        <?php if($p=='partner-activity-log'){
-            $p = 'partner-activity-log-page';
-        }?>
+        <?php if ($p == 'partner-activity-log') {
+    $p = 'partner-activity-log-page';
+}?>
         <?php
-        if ($conn->connect_error || !file_exists("view/" . $p . ".php")) {?>
-            <?php include("view/header.php"); ?>
-            <?php include("view/404.php");?>
-            <?php include("view/footer.php"); ?>
-        <?php } else {
+        if ($conn->connect_error || !file_exists('view/'.$p.'.php')) {
+            ?>
+            <?php include 'view/header.php'; ?>
+            <?php include 'view/404.php'; ?>
+            <?php include 'view/footer.php'; ?>
+        <?php
+        } else {
             ?>
             <div id="page" class="site">
-                <?php include("view/header.php"); ?>
-                <?php include("view/" . $p . ".php"); ?>
-                <?php include("view/footer.php"); ?>
+                <?php include 'view/header.php'; ?>
+                <?php include 'view/'.$p.'.php'; ?>
+                <?php include 'view/footer.php'; ?>
                 <a class="scrollup" href="#colophon" style="display: block;"></a>
             </div>
-        <?php } ?>
+        <?php
+        } ?>
     </body>
 </html>
